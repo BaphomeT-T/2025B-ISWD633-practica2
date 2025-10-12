@@ -27,3 +27,6 @@ docker secret ls
 
 # Eliminar secreto
 docker secret rm db_password
+
+```
+Los secretos solo están disponibles para los servicios que los solicitan y desaparecen al eliminar el contenedor o el servicio, garantizando la confidencialidad de los datos
