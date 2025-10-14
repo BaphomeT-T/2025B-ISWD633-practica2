@@ -25,8 +25,11 @@ docker service create --name mysqlSrv --secret db_password \
 # Listar secretos
 docker secret ls
 
-# Eliminar secreto
-docker secret rm db_password
+# Eliminar Secretos
+docker secret ls
+
+#docker secret rm dbpassword
 
 ```
-Los secretos solo están disponibles para los servicios que los solicitan y desaparecen al eliminar el contenedor o el servicio, garantizando la confidencialidad de los datos
+Los secretos solo están di
+sponibles para los servicios que solicitan y desaparecen al eliminar el contenedor o el servicio, garantizando la confidencialidad de los datos.
